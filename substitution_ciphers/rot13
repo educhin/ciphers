@@ -1,0 +1,12 @@
+#!/usr/bin/python 
+
+def encrypt(string):
+  # takes in a string and rotates each character by 13 places 
+  return "dafdafdf"
+
+def run():
+  string = input("Please enter the message you would like to encrypt: ")
+  encrypted_value = encrypt(string)
+  print(encrypted_value)
+
+run()
