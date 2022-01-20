@@ -1,9 +1,14 @@
 #!/usr/bin/python 
-import string
+import string as STRING
 
 def encrypt(string):
   # takes in a string and rotates each character by 13 places 
-  return "dafdafdf"
+  arr = []
+  for el in string:
+    if el in STRING.ascii_lowercase:
+      char = "yes"
+      arr.append(char)
+  return ''.join(arr)
 
 def run():
   string = input("Please enter the message you would like to encrypt: ")
