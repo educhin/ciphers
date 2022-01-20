@@ -5,9 +5,12 @@ def encrypt(string):
   # takes in a string and rotates each character by 13 places 
   arr = []
   for el in string:
-    if el in STRING.ascii_lowercase:
-      char = "yes"
+    print(el)
+    if el in STRING.ascii_lowercase or el in STRING.ascii_uppercase:
+      char = chr((ord(el) - 96 + 13) % 26 + 96)
       arr.append(char)
+    else:
+      arr.append(el)
   return ''.join(arr)
 
 def run():
